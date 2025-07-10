@@ -1,0 +1,730 @@
+{
+  "question": "How many unsubstantiated complaints are for Israel?",
+  "batch_responses": [
+    {
+      "batch_number": 1,
+      "chunks_in_batch": 6,
+      "gpt_response": "**Direct Answer Extraction:**\n\nThe document does not explicitly state the number of unsubstantiated complaints specifically for Israel. The data provided in the document (Page 36, Table 6.2-1) summarizes total unsubstantiated complaints across different review periods but does not break down these complaints by country, including Israel.\n\n**Regulatory Context Analysis:**\n\nIn the context of pharmaceutical regulatory requirements, unsubstantiated complaints are those that have not been verified or confirmed through investigation. Regulatory bodies such as the FDA or EMA require companies to investigate complaints thoroughly to ensure product safety and efficacy. The absence of specific data for Israel could imply a need for more detailed regional reporting to meet local regulatory standards.\n\n**Quantitative Data Validation:**\n\nThe document provides a total count of unsubstantiated complaints for various quarters, but without a regional breakdown, it is impossible to validate the number specifically for Israel. The data shows fluctuations in the total number of unsubstantiated complaints, which could indicate varying levels of product issues or reporting practices over time.\n\n**Comprehensive Insights:**\n\nThe lack of specific data for Israel suggests a potential gap in the reporting system. This could have implications for local regulatory compliance and might obscure region-specific safety signals. It is crucial for pharmaceutical companies to ensure that their complaint reporting systems can provide detailed geographic data to address local regulatory requirements and safety concerns.\n\n**Evidence-Based Conclusions:**\n\n- **Key Findings:** The document does not provide specific numbers for unsubstantiated complaints in Israel.\n- **Data Limitations:** The absence of regional breakdowns limits the ability to assess compliance and safety issues specific to Israel.\n- **Recommendations:** Implement a more granular complaint tracking system that includes geographic data to enhance regulatory compliance and safety monitoring.\n- **Further Investigation:** Determine if there are internal reports or databases that provide the necessary regional breakdowns for unsubstantiated complaints.\n\nIn conclusion, while the document provides a comprehensive overview of complaint data, the lack of specific information for Israel highlights a need for improved data granularity to meet regulatory expectations and ensure product safety in all markets.",
+      "chunk_details": [
+        {
+          "rank": 2,
+          "similarity": 1.0,
+          "base_similarity": 0.7960989442815671,
+          "page": 36,
+          "type": "page_text",
+          "preview": "6.2 Complaints\ne\nTable 6.2-1 summarises the complaints received in the review period v\ni\nTable 6.2-1 Complaints received in the current and previoust ..."
+        },
+        {
+          "rank": 3,
+          "similarity": 1.0,
+          "base_similarity": 0.7709273061873868,
+          "page": 36,
+          "type": "table",
+          "preview": "Table with 4 rows and 4 columns:\n | Complaints from Current\nReview Period | i\nt\nc\nComplaints from Previous\nReview Period | \nTotal Substantiated\nCompla..."
+        },
+        {
+          "rank": 28,
+          "similarity": 1.0,
+          "base_similarity": 0.7327145476634344,
+          "page": 42,
+          "type": "table",
+          "preview": "Table with 2 rows and 1 columns:\nA review of laboratory deviations and exceptions raised in 2023 for the Packaging Materials Laboratory are detailed i..."
+        },
+        {
+          "rank": 29,
+          "similarity": 1.0,
+          "base_similarity": 0.7322478537801684,
+          "page": 42,
+          "type": "table",
+          "preview": "Table with 2 rows and 1 columns:\nA review of laboratory deviations and exceptions raised in 2023 for the Raw Material Laboratory are detailed in repor..."
+        },
+        {
+          "rank": 8,
+          "similarity": 1.0,
+          "base_similarity": 0.7734734936882482,
+          "page": 6,
+          "type": "table",
+          "preview": "Table with 3 rows and 1 columns:\ni\nThis review has confirmed that manufacturing and analytical activities remain in a validated state of\nt\ncontrol and..."
+        },
+        {
+          "rank": 1,
+          "similarity": 1.0,
+          "base_similarity": 0.8245000363447934,
+          "page": 35,
+          "type": "table",
+          "preview": "Table with 2 rows and 1 columns:\nE\nIn summary, the validation of the process and methods is considered effective and is deemed appropriate in ensuring..."
+        }
+      ]
+    },
+    {
+      "batch_number": 2,
+      "chunks_in_batch": 8,
+      "gpt_response": "**DIRECT ANSWER EXTRACTION**\n\nUpon reviewing the provided content, the specific number of unsubstantiated complaints for Israel is not directly mentioned in the excerpts from Batch 2 of the regulatory document. The relevant information regarding unsubstantiated complaints is indicated to be in Appendix 3, which is not included in the provided text.\n\n**REGULATORY CONTEXT ANALYSIS**\n\nIn regulatory terms, unsubstantiated complaints are those that have not been confirmed through investigation. The presence of such complaints can indicate potential issues in product quality or customer satisfaction that require further investigation. Regulatory bodies often require detailed documentation and follow-up on such complaints to ensure product safety and compliance with standards.\n\n**QUANTITATIVE DATA VALIDATION**\n\nSince the specific number of unsubstantiated complaints for Israel is not available in the provided text, it is crucial to access Appendix 3 for precise data. Cross-referencing this appendix with other sections of the document could provide a comprehensive view of the complaint landscape.\n\n**COMPREHENSIVE INSIGHTS**\n\nThe absence of direct data in the provided text highlights the importance of accessing complete documentation for thorough analysis. Understanding the nature and frequency of unsubstantiated complaints can help identify potential safety signals or areas needing quality improvement.\n\n**EVIDENCE-BASED CONCLUSIONS**\n\n- **Key Findings**: The number of unsubstantiated complaints for Israel is not specified in the provided text.\n- **Data Limitations**: The necessary appendix containing detailed complaint data is not included.\n- **Recommendations**: Access Appendix 3 for detailed information on unsubstantiated complaints. Investigate any patterns or recurring issues that may indicate broader quality or safety concerns.\n\n**Follow-Up Questions or Investigations**\n\n1. What is the total number of unsubstantiated complaints listed in Appendix 3?\n2. Are there any recurring issues or patterns in the complaints from Israel?\n3. What measures are in place to address and investigate unsubstantiated complaints?\n\nBy addressing these questions, a more comprehensive understanding of the complaint landscape and its implications for drug safety and regulatory compliance can be achieved.",
+      "chunk_details": [
+        {
+          "rank": 1,
+          "similarity": 0.9804125155388668,
+          "base_similarity": 0.8004125155388667,
+          "page": 36,
+          "type": "page_text",
+          "preview": "These complaints will be assessed in the next quarter when fully processed, refer to Table 2-1. Table 6.2-2 lists all substantiated complaints receive..."
+        },
+        {
+          "rank": 12,
+          "similarity": 0.9792540016180803,
+          "base_similarity": 0.7692540016180803,
+          "page": 120,
+          "type": "table",
+          "preview": "Table with 8 rows and 5 columns:\nVersion |  | Date |  | e\nf\nf\nChanges\n |  | Approved |  | \n48 | Apr 2024 |  |  | E\n Action Completion/Due date added ..."
+        },
+        {
+          "rank": 8,
+          "similarity": 0.9711940994798715,
+          "base_similarity": 0.7411940994798715,
+          "page": 42,
+          "type": "table",
+          "preview": "Table with 2 rows and 1 columns:\nA review of the suppliers’ performance has identified no concerns with the materials adversely affecting product perf..."
+        },
+        {
+          "rank": 11,
+          "similarity": 0.9694928604772924,
+          "base_similarity": 0.7394928604772925,
+          "page": 43,
+          "type": "table",
+          "preview": "Table with 2 rows and 1 columns:\nNote: There is a tolerance of three months from the end of the review period allowed for the subsequent review report..."
+        },
+        {
+          "rank": 12,
+          "similarity": 0.9694817759853152,
+          "base_similarity": 0.7394817759853152,
+          "page": 42,
+          "type": "table",
+          "preview": "Table with 2 rows and 1 columns:\ne\nA review of all other suppliers’ performance has identified no concerns with the materials adversely affecting prod..."
+        },
+        {
+          "rank": 8,
+          "similarity": 0.9687134325904441,
+          "base_similarity": 0.788713432590444,
+          "page": 121,
+          "type": "page_text",
+          "preview": "37 Dec 2021\n Table 6.2-3 removed as the complaints report is now one report that will be updated on a quarterly basis.  CDMS references change to Ve..."
+        },
+        {
+          "rank": 37,
+          "similarity": 0.959735138291006,
+          "base_similarity": 0.729735138291006,
+          "page": 119,
+          "type": "table",
+          "preview": "This PAC is being requested now, due that it\nwasn't created at the time of approval of variation associated to event\n\"RADAR 16838 D2013-8663 Addition ..."
+        },
+        {
+          "rank": 32,
+          "similarity": 0.9405264571185649,
+          "base_similarity": 0.7305264571185649,
+          "page": 37,
+          "type": "table",
+          "preview": "Table with 16 rows and 6 columns:\nUnique\nIdentifier | Market | Batch\nNumber | Material\nCode | Complaint\nDescription | Defect\nCategory\n000201367771 | S..."
+        }
+      ]
+    },
+    {
+      "batch_number": 3,
+      "chunks_in_batch": 9,
+      "gpt_response": "**DIRECT ANSWER EXTRACTION**\n\nUpon reviewing the provided content from Batch 3 of the regulatory document, there is no explicit mention of unsubstantiated complaints specifically for Israel. The tables and text excerpts provided do not contain any direct numerical data or references to unsubstantiated complaints related to Israel.\n\n**REGULATORY CONTEXT ANALYSIS**\n\nIn the context of pharmaceutical regulatory requirements, unsubstantiated complaints refer to those that have not been verified or confirmed through investigation. Regulatory bodies typically require that all complaints, whether substantiated or not, be documented and reviewed to ensure product safety and compliance with Good Manufacturing Practices (GMP).\n\n**QUANTITATIVE DATA VALIDATION**\n\nThe data provided in the excerpts does not include any specific counts or references to unsubstantiated complaints for Israel. The tables and text focus on various other aspects such as complaint rates, environmental monitoring, and batch information, but do not address the specific query regarding Israel.\n\n**COMPREHENSIVE INSIGHTS**\n\nGiven the absence of direct data on unsubstantiated complaints for Israel, it is important to ensure that the document is thoroughly reviewed in its entirety. This includes checking sections that may not have been included in the provided excerpts. Additionally, it would be prudent to verify if there are any appendices or supplementary reports that address regional complaint data.\n\n**EVIDENCE-BASED CONCLUSIONS**\n\n- **Key Findings**: No direct data on unsubstantiated complaints for Israel was found in the provided excerpts.\n- **Confidence Levels**: The analysis is limited by the lack of specific data in the provided content.\n- **Recommendations**: Conduct a comprehensive review of the entire regulatory document, focusing on sections related to complaint management and regional data. Consider reaching out to the document's authors or custodians for clarification if necessary.\n- **Data Gaps**: The current excerpts do not provide sufficient information to answer the query definitively. Further investigation is required.\n\nIf additional sections of the document are available, they should be reviewed to locate the specific information regarding unsubstantiated complaints for Israel.",
+      "chunk_details": [
+        {
+          "rank": 3,
+          "similarity": 0.9404785108120374,
+          "base_similarity": 0.8104785108120374,
+          "page": 6,
+          "type": "page_text",
+          "preview": "QE-011184 10/06/2024\nQE-011306 12/06/2024\nQE-011325 12/06/2024\nQE-011374 13/06/2024\ne\nQE-011377 13/06/2024\nvQE-011486 16/06/2024\n3 Conclusion i\nt\nThis..."
+        },
+        {
+          "rank": 11,
+          "similarity": 0.9404209464812004,
+          "base_similarity": 0.7604209464812005,
+          "page": 121,
+          "type": "table",
+          "preview": "Table with 15 rows and 5 columns:\n42 | Oct 2022 |  NPI changed to MSAT throughout.  Prompts added to all relevant sections to remind people to close..."
+        },
+        {
+          "rank": 5,
+          "similarity": 0.9383544480521488,
+          "base_similarity": 0.7783544480521489,
+          "page": 44,
+          "type": "table",
+          "preview": "Table with 6 rows and 4 columns:\nReview Period Dates | Facility | Environmental\nMonitoring Report\nReference | v\ni\nWater Monitoring\nReport Reference\nJa..."
+        },
+        {
+          "rank": 5,
+          "similarity": 0.9313641815542464,
+          "base_similarity": 0.7513641815542464,
+          "page": 38,
+          "type": "page_text",
+          "preview": "This is a known issue which is tracked in the monthly and\nquarterly complaint reports. The current complaint for this defect is 058ppm. One complaint ..."
+        },
+        {
+          "rank": 6,
+          "similarity": 0.9250866337880472,
+          "base_similarity": 0.7650866337880472,
+          "page": 92,
+          "type": "table",
+          "preview": "Table with 25 rows and 5 columns:\nUnique\nIdentifier | Market | Batch\nNumber | Material\nCode | Complaint\nDescription\n000201424225 | South Africa | NU2S..."
+        },
+        {
+          "rank": 8,
+          "similarity": 0.9226711299237098,
+          "base_similarity": 0.7626711299237099,
+          "page": 85,
+          "type": "table",
+          "preview": "Table with 25 rows and 5 columns:\nUnique\nIdentifier | Market | Batch\nNumber | Material\nCode | Complaint\nDescription\n000201376024 | United States of Am..."
+        },
+        {
+          "rank": 7,
+          "similarity": 0.9207745275569006,
+          "base_similarity": 0.7907745275569006,
+          "page": 39,
+          "type": "page_text",
+          "preview": "notifications2\nRecalls N/A\nField Safety\nCorrective Action/ N/A\nField Safety Notice\nRapid Alerts N/A\nOther (describe) N/A\nData sourced from: SAP and fr..."
+        },
+        {
+          "rank": 9,
+          "similarity": 0.9201654058987448,
+          "base_similarity": 0.7901654058987448,
+          "page": 35,
+          "type": "page_text",
+          "preview": "Item\nCode changed from 84555\nto 10000000119265 – no\neadditional validation\nrequired for Item Code\nv\nchange\nData sourced from: Veeva Quality Documents ..."
+        },
+        {
+          "rank": 23,
+          "similarity": 0.9151958865957792,
+          "base_similarity": 0.7351958865957793,
+          "page": 41,
+          "type": "table",
+          "preview": "Table with 2 rows and 1 columns:\nThe supplier IFF Newark (Avicel) is Conditionally Approved DE 201204635. A Risk Assessment VQD-RPT-040986 was perform..."
+        }
+      ]
+    },
+    {
+      "batch_number": 4,
+      "chunks_in_batch": 12,
+      "gpt_response": "**Direct Answer Extraction:**\n\nThe number of unsubstantiated complaints for Israel is **one**. This is found in the table on Page 81, under Appendix 3 - Unsubstantiated Complaints, where the entry for Israel is listed with the unique identifier **000201357115** and the complaint description \"Pump does not work.\"\n\n**Regulatory Context Analysis:**\n\nUnsubstantiated complaints are those that have been reported but lack sufficient evidence to confirm a defect or issue with the product. Regulatory bodies, such as the FDA or EMA, require pharmaceutical companies to document and investigate all complaints, substantiated or not, to ensure product safety and compliance with Good Manufacturing Practices (GMP). The presence of an unsubstantiated complaint from Israel indicates that the company is tracking and documenting all reports, which is a critical component of pharmacovigilance and compliance.\n\n**Quantitative Data Validation:**\n\nThe data from Page 81 is consistent with the format and reporting standards expected in regulatory documents. The complaint for Israel is clearly listed among other international complaints, suggesting a comprehensive approach to global pharmacovigilance.\n\n**Comprehensive Insights:**\n\nThe presence of an unsubstantiated complaint from Israel does not immediately indicate a safety concern but highlights the importance of ongoing monitoring and investigation. It is crucial for the company to continue tracking such complaints to identify any emerging patterns or trends that could indicate a broader issue.\n\n**Evidence-Based Conclusions:**\n\n- **Key Finding:** There is one unsubstantiated complaint for Israel.\n- **Regulatory Implication:** The company is compliant with regulatory expectations for tracking and documenting complaints.\n- **Safety Concerns:** No immediate safety concerns are evident from a single unsubstantiated complaint, but continued vigilance is necessary.\n- **Data Quality:** The data appears complete and consistent with regulatory reporting standards.\n- **Recommendations:** Continue monitoring for additional complaints from Israel or similar issues in other markets to identify potential trends.\n\n**Follow-Up Questions or Investigations:**\n\n- Are there any substantiated complaints from Israel or other markets that could correlate with this unsubstantiated complaint?\n- What are the outcomes of investigations into similar complaints in other regions?\n- How does the company plan to address and resolve unsubstantiated complaints to prevent recurrence?",
+      "chunk_details": [
+        {
+          "rank": 10,
+          "similarity": 0.9127285270489129,
+          "base_similarity": 0.7827285270489129,
+          "page": 44,
+          "type": "page_text",
+          "preview": "The tests performed and results obtained are summarised in the reports\ne\nlisted below:\nv\nTable 7.2-3 Environmental monitoring reports\ni\nReview Period ..."
+        },
+        {
+          "rank": 6,
+          "similarity": 0.9122392320789048,
+          "base_similarity": 0.7922392320789048,
+          "page": 44,
+          "type": "page_text",
+          "preview": "During the review period all microbiological testing of the finished product complied with the required product specification. No skip lot testing is ..."
+        },
+        {
+          "rank": 7,
+          "similarity": 0.9109546182155777,
+          "base_similarity": 0.7909546182155777,
+          "page": 12,
+          "type": "page_text",
+          "preview": "The Product Control Strategy (PCS) CPV Data Trending Plan (VQD-RPT-084756) and Technical Risk Assessment (reference VQD-RPT-\n088318) were reviewed and..."
+        },
+        {
+          "rank": 31,
+          "similarity": 0.9106758859524986,
+          "base_similarity": 0.7306758859524987,
+          "page": 93,
+          "type": "table",
+          "preview": "Table with 25 rows and 5 columns:\nUnique\nIdentifier | Market | Batch\nNumber | Material\nCode | Complaint\nDescription\n000201431587 | United States of Am..."
+        },
+        {
+          "rank": 3,
+          "similarity": 0.9090449274999937,
+          "base_similarity": 0.7790449274999937,
+          "page": 41,
+          "type": "page_text",
+          "preview": "Barnard Castle has completed thie following Risk Assessment VQD-AST-019136 and no further\naction is required. Where the review date that has been exce..."
+        },
+        {
+          "rank": 4,
+          "similarity": 0.9089233103178012,
+          "base_similarity": 0.7789233103178012,
+          "page": 8,
+          "type": "page_text",
+          "preview": "Actions identified from investigation into DEV-006557 were in\nprogress at the time DEV-007640 occurred; refer to section 5.5 for further details. Tabl..."
+        },
+        {
+          "rank": 8,
+          "similarity": 0.905134927052843,
+          "base_similarity": 0.775134927052843,
+          "page": 43,
+          "type": "page_text",
+          "preview": "VQD-RPT- 291191: CP12 Groninger Validated 22 Feb 2024 Feb 2025\nRoutine Thermal Report. Data sourced from: Veeva Date data was sourced: 13 Jun 2024\nNot..."
+        },
+        {
+          "rank": 8,
+          "similarity": 0.9002034148426167,
+          "base_similarity": 0.7902034148426167,
+          "page": 33,
+          "type": "page_text",
+          "preview": "i\nt\nc\n5.7 Process and Method Validation Activities and Status\ne\nf\nTable 5.7-1 lists the validation activity that was completed in the review period\nf\n..."
+        },
+        {
+          "rank": 12,
+          "similarity": 0.8999671223751898,
+          "base_similarity": 0.7699671223751898,
+          "page": 28,
+          "type": "page_text",
+          "preview": "Cause: No distinction between who is/is not acting as the verifier in some instances. CAPA CA 201427512 completed: Update to VQD-SOP-025150 - Procedur..."
+        },
+        {
+          "rank": 13,
+          "similarity": 0.8990940204002915,
+          "base_similarity": 0.7390940204002915,
+          "page": 81,
+          "type": "page_text",
+          "preview": "GSK VQD-Q&AU-089671 v: 1.0 Retrieved: 27 Nov 2024 Effective: 29 Jul 2024\nBarnard Castle PPR 2024 Fluticasone Furoate Nasal Spray and FFNS Placebo\n12 A..."
+        },
+        {
+          "rank": 9,
+          "similarity": 0.8983416850593781,
+          "base_similarity": 0.7883416850593781,
+          "page": 39,
+          "type": "page_text",
+          "preview": "v\nTable 6.3-1 List of field alerts, PIRCs, recalls and other market actions\ni\nt\nc Market Name\nType of Lot Investigation / Corrective\nDescription of Ev..."
+        },
+        {
+          "rank": 21,
+          "similarity": 0.8962925843761256,
+          "base_similarity": 0.7362925843761255,
+          "page": 123,
+          "type": "table",
+          "preview": "Table with 1 rows and 2 columns:\nVerdict: Approve | i\nt\nSteven Guy sqg99496\n(steven.x.guy@gsk.com)\nQuality Assurance Approval\n29-Jul-2024 11:48:52 GMT..."
+        }
+      ]
+    },
+    {
+      "batch_number": 5,
+      "chunks_in_batch": 8,
+      "gpt_response": "**DIRECT ANSWER EXTRACTION**\n\nThe number of unsubstantiated complaints for Israel is **two**. This information is extracted from the following entries:\n\n1. **Page 106, Table 0**: Complaint QE-008974 for Israel, where the product does not spray.\n2. **Page 97, Table 0**: Complaint QE-004535 for Israel, where the substance does not come out.\n\n**REGULATORY CONTEXT ANALYSIS**\n\nIn the context of pharmaceutical regulatory requirements, unsubstantiated complaints must be thoroughly investigated to ensure product safety and compliance with local regulations. The presence of multiple complaints from a single market, such as Israel, may indicate a potential quality issue that requires further investigation to determine if there is a systemic problem with the product or batch.\n\n**QUANTITATIVE DATA VALIDATION**\n\nThe data from the tables on pages 106 and 97 are consistent in identifying two separate complaints from Israel. These complaints are related to the same product issue, which suggests a pattern that should be further examined.\n\n**COMPREHENSIVE INSIGHTS**\n\nThe repeated nature of the complaints from Israel could indicate a localized issue with distribution or storage conditions, or it might reflect a broader manufacturing defect. Regulatory bodies would expect the manufacturer to conduct a root cause analysis and implement corrective actions if necessary.\n\n**EVIDENCE-BASED CONCLUSIONS**\n\n- **Key Findings**: Two unsubstantiated complaints from Israel regarding the same product issue.\n- **Regulatory Implications**: Potential need for a detailed investigation and corrective action plan.\n- **Recommendations**: Conduct a thorough investigation into the complaints, assess the need for a product recall or additional quality checks, and report findings to the relevant regulatory authorities.\n- **Data Limitations**: The document does not provide detailed investigation outcomes for these complaints, which limits the ability to fully assess the situation.\n\nFurther investigation should focus on whether these complaints are isolated incidents or part of a larger trend affecting product quality.",
+      "chunk_details": [
+        {
+          "rank": 25,
+          "similarity": 0.8946256997976441,
+          "base_similarity": 0.7346256997976441,
+          "page": 119,
+          "type": "table",
+          "preview": "Loncg term\nstability studies results at 24 months should be submitted to fulfill with\ne\nMoH commitment. This PAC is being requested now, due that it w..."
+        },
+        {
+          "rank": 4,
+          "similarity": 0.892066629260957,
+          "base_similarity": 0.752066629260957,
+          "page": 106,
+          "type": "table",
+          "preview": "Table with 15 rows and 5 columns:\nUnique\nIdentifier | Market | Batch\nNumber | Material\nCode | Complaint\nDescription\nQE-008974 | Israel | 7R8M | 100000..."
+        },
+        {
+          "rank": 36,
+          "similarity": 0.8898624705389273,
+          "base_similarity": 0.7298624705389273,
+          "page": 104,
+          "type": "table",
+          "preview": "Table with 14 rows and 5 columns:\nUnique\nIdentifier | Market | Batch\nNumber | Material\nCode | Complaint\nDescription\nQE-008369 | South Korea | 645L | 1..."
+        },
+        {
+          "rank": 16,
+          "similarity": 0.8779397635690448,
+          "base_similarity": 0.7379397635690448,
+          "page": 97,
+          "type": "table",
+          "preview": "Table with 12 rows and 5 columns:\nUnique\nIdentifier | Market | Batch\nNumber | Material\nCode | Complaint\nDescription\nQE-004531 | United States | WV8K |..."
+        },
+        {
+          "rank": 20,
+          "similarity": 0.8763707667792435,
+          "base_similarity": 0.7363707667792435,
+          "page": 90,
+          "type": "table",
+          "preview": "Table with 25 rows and 5 columns:\nUnique\nIdentifier | Market | Batch\nNumber | Material\nCode | Complaint\nDescription\n000201410305 | United States of Am..."
+        },
+        {
+          "rank": 22,
+          "similarity": 0.8755272487715433,
+          "base_similarity": 0.7355272487715433,
+          "page": 123,
+          "type": "table",
+          "preview": "Table with 1 rows and 2 columns:\nVerdict: Approve | e\nMichael Shaw mys57980\n(michael.x.shaw@gsk.com)\nTechnical Approval\n26-Jul-2024 10:39:17 GMT+0000"
+        },
+        {
+          "rank": 7,
+          "similarity": 0.8731550137970145,
+          "base_similarity": 0.7431550137970145,
+          "page": 14,
+          "type": "page_text",
+          "preview": "The DSD D50 content over the review period remains a highly\ncapable process against the specification with a Ppk of 2.01. Based on the cause category,..."
+        },
+        {
+          "rank": 2,
+          "similarity": 0.8718451061900954,
+          "base_similarity": 0.7718451061900954,
+          "page": 118,
+          "type": "table",
+          "preview": "Monograph 10.6 | United Kingdom (exc."
+        }
+      ]
+    },
+    {
+      "batch_number": 6,
+      "chunks_in_batch": 8,
+      "gpt_response": "**DIRECT ANSWER EXTRACTION**\n\nUpon reviewing the provided content from Batch 6 of the regulatory document, there is no explicit mention of the number of unsubstantiated complaints specifically for Israel. The excerpts provided do not contain direct numerical data or specific references to unsubstantiated complaints related to Israel.\n\n**REGULATORY CONTEXT ANALYSIS**\n\nIn the context of pharmaceutical regulatory requirements, unsubstantiated complaints typically refer to reports of adverse events or product issues that lack sufficient evidence or documentation to confirm their validity. Regulatory bodies, such as the Israeli Ministry of Health, require thorough documentation and investigation of all complaints to ensure drug safety and compliance with local regulations.\n\n**QUANTITATIVE DATA VALIDATION**\n\nThe absence of specific data on unsubstantiated complaints for Israel in the provided excerpts suggests a need to review additional sections of the document or related reports. It is crucial to ensure that all complaints are documented and investigated according to regulatory standards to maintain product safety and compliance.\n\n**COMPREHENSIVE INSIGHTS**\n\nGiven the lack of direct data in the provided excerpts, it is essential to access the full regulatory document or related sections that might contain detailed complaint records. This would allow for a comprehensive analysis of the complaint handling process and ensure that all regulatory requirements are met.\n\n**EVIDENCE-BASED CONCLUSIONS**\n\n- **Key Findings**: The current batch does not provide specific data on unsubstantiated complaints for Israel.\n- **Confidence Levels**: The analysis is limited by the lack of direct information in the provided excerpts.\n- **Recommendations**: Further investigation into the full document or related sections is necessary to obtain the required data.\n- **Data Gaps**: The absence of specific complaint data for Israel highlights a gap in the provided information.\n\nFor a complete analysis, it is recommended to review the entire regulatory document or consult additional sources that may contain the necessary data on unsubstantiated complaints for Israel.",
+      "chunk_details": [
+        {
+          "rank": 4,
+          "similarity": 0.8661316116228284,
+          "base_similarity": 0.7661316116228284,
+          "page": 32,
+          "type": "table",
+          "preview": "Table with 1 rows and 4 columns:\nData sourced from: | MERP via RPA - 2371 PPR_DataExtraction Robot | Date data was\nsourced: | 09-May-24"
+        },
+        {
+          "rank": 10,
+          "similarity": 0.8656028657343273,
+          "base_similarity": 0.7856028657343274,
+          "page": 5,
+          "type": "page_text",
+          "preview": "In process control, analytical and stability data continue to support existing specifications and life\nto expiry. A review of the cumulative impact of..."
+        },
+        {
+          "rank": 4,
+          "similarity": 0.8631386441089979,
+          "base_similarity": 0.7931386441089978,
+          "page": 33,
+          "type": "page_text",
+          "preview": "Table 5.7-2 lists the method validation reviews completed for the Analytical Laboratory in the review period. Proprietary Information. Do not disclose..."
+        },
+        {
+          "rank": 1,
+          "similarity": 0.8623922643872323,
+          "base_similarity": 0.7623922643872323,
+          "page": 44,
+          "type": "page_text",
+          "preview": "Environmental monitoring for the review period for viable and non-viable monitoring (including air supplies) demonstrates that\nenvironmental standards..."
+        },
+        {
+          "rank": 4,
+          "similarity": 0.8564629856917862,
+          "base_similarity": 0.7764629856917863,
+          "page": 33,
+          "type": "page_text",
+          "preview": "Until all TTS have changed to IQA, there will be a combination of both formats. e\nThe cumulative impact of change is assessed as part of the Live Equi..."
+        },
+        {
+          "rank": 8,
+          "similarity": 0.8538374378519373,
+          "base_similarity": 0.7738374378519374,
+          "page": 40,
+          "type": "page_text",
+          "preview": "The\nroot cause of both the non-optimal process and the lack of cleaning and PCCeE assessment was a lack of written guidance relating to the\nselection ..."
+        },
+        {
+          "rank": 30,
+          "similarity": 0.8414870306123763,
+          "base_similarity": 0.7314870306123763,
+          "page": 119,
+          "type": "page_text",
+          "preview": "Provide long term stability studies results at 24 months for t\nglass type III for 3 DP Batches manufactured at Aranda Site. Loncg term\nstability studi..."
+        },
+        {
+          "rank": 9,
+          "similarity": 0.8409416373088451,
+          "base_similarity": 0.7409416373088451,
+          "page": 39,
+          "type": "table",
+          "preview": "|  | N/A | Major DE 2014213331\nAnd associated PR\nnotifications2\nRecalls | N/A |  |  |  | \nField Safety\nCorrective Action/\nField Safety Notice | N/A | ..."
+        }
+      ]
+    },
+    {
+      "batch_number": 7,
+      "chunks_in_batch": 12,
+      "gpt_response": "**DIRECT ANSWER EXTRACTION**\n\nUpon reviewing the provided content from Batch 7 of 8, there is no explicit mention of the number of unsubstantiated complaints specifically for Israel. The excerpts provided do not contain direct numerical data or references to unsubstantiated complaints related to Israel.\n\n**REGULATORY CONTEXT ANALYSIS**\n\nIn the context of pharmaceutical regulatory requirements, unsubstantiated complaints typically refer to reports that lack sufficient evidence to confirm a product defect or adverse event. Regulatory bodies, such as the FDA or EMA, require thorough documentation and investigation of all complaints, including those that are unsubstantiated, to ensure ongoing drug safety and compliance.\n\n**QUANTITATIVE DATA VALIDATION**\n\nThe excerpts do not provide specific quantitative data regarding unsubstantiated complaints for Israel. Therefore, cross-referencing or validation of such data is not possible with the current information.\n\n**COMPREHENSIVE INSIGHTS**\n\nGiven the absence of specific data on unsubstantiated complaints for Israel in the provided excerpts, it is crucial to ensure that the full document is reviewed for any sections that might contain this information. It is also important to ensure that all complaints, whether substantiated or not, are documented and investigated according to regulatory standards to identify any potential safety signals.\n\n**EVIDENCE-BASED CONCLUSIONS**\n\n- **Key Findings**: The current batch does not provide specific information on unsubstantiated complaints for Israel.\n- **Confidence Levels**: The lack of data in the provided excerpts limits the ability to draw conclusions about the number of unsubstantiated complaints for Israel.\n- **Recommendations**: A thorough review of the entire regulatory document is recommended to locate any sections that might address unsubstantiated complaints for Israel. Additionally, ensuring compliance with regulatory standards for complaint documentation and investigation is crucial.\n- **Gaps**: The primary gap is the absence of specific data on unsubstantiated complaints for Israel in the provided excerpts.\n\nFor a more comprehensive analysis, access to the complete document or additional sections that might contain relevant data is necessary.",
+      "chunk_details": [
+        {
+          "rank": 34,
+          "similarity": 0.8402594987319365,
+          "base_similarity": 0.7302594987319365,
+          "page": 11,
+          "type": "page_text",
+          "preview": "e\nGraphical representations of the CQA data are profvided in Appendix 2\n289 Bulk/US Batches BX9A & FV9K rejected bfatches removed. 288 Filled ROW/US C..."
+        },
+        {
+          "rank": 18,
+          "similarity": 0.8372569987664868,
+          "base_similarity": 0.7372569987664869,
+          "page": 33,
+          "type": "table",
+          "preview": "|  |  |  |  |  |  |  |  |  |"
+        },
+        {
+          "rank": 27,
+          "similarity": 0.8332947288262108,
+          "base_similarity": 0.7332947288262108,
+          "page": 123,
+          "type": "table",
+          "preview": "Table with 1 rows and 2 columns:\nVerdict: Approve | Shelly Edgar sj77269\n(shelly.x.edgar@gsk.com)\nQualified Person Approval\n25-Jul-2024 10:56:18 GMT+0..."
+        },
+        {
+          "rank": 3,
+          "similarity": 0.8285478511396686,
+          "base_similarity": 0.7785478511396685,
+          "page": 40,
+          "type": "page_text",
+          "preview": "The applications, variations and post marketing commitments were reviewed and where required have or are being actioned as\nappropriate. Proprietary In..."
+        },
+        {
+          "rank": 4,
+          "similarity": 0.8230786593097367,
+          "base_similarity": 0.7430786593097367,
+          "page": 74,
+          "type": "page_text",
+          "preview": "Droplet Size Distribution Mean D\n90 µm\n)mµ(\nnaem\nnoitubirtsiD\neziS\ntelporD\n09D\n2\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n0\n9\n8\n7\n6\n5\n4\n3\n2\n1\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\nW6BW\n..."
+        },
+        {
+          "rank": 1,
+          "similarity": 0.8216899475990682,
+          "base_similarity": 0.8016899475990682,
+          "page": 31,
+          "type": "page_text",
+          "preview": "000201350645 (Major Avamys - use of unapproved EDTA TN2X 000201373610 C APA completed\nDeviation)\nProprietary Information. Do not disclose without cons..."
+        },
+        {
+          "rank": 3,
+          "similarity": 0.8190549145376244,
+          "base_similarity": 0.7790549145376243,
+          "page": 39,
+          "type": "page_text",
+          "preview": "6.3 Market Actions\ne\nTable 6.3-1 Lists field alerts, PIRCs, recalls and other market actions raised within the review period."
+        },
+        {
+          "rank": 15,
+          "similarity": 0.8188626828070781,
+          "base_similarity": 0.7388626828070781,
+          "page": 119,
+          "type": "page_text",
+          "preview": "Long\nterm stability studies results at 24 months should be submitted to fulfill\nwith MoH commitment. This PAC is being requested now, due that it\nwasn..."
+        },
+        {
+          "rank": 10,
+          "similarity": 0.817145160127917,
+          "base_similarity": 0.7371451601279171,
+          "page": 75,
+          "type": "page_text",
+          "preview": "Droplet Size Distribution Mean Droplets <10µm (%)\n01<\neziS\ntelporD\n%\nnaeM\nmµ\n1\n1\n0\n0\n-0\n.4\n.0\n.6\n.2\n.2\nW6BW\n1\nX8AX\nereH\nstratS\ndoireP\nweiveR\nF8RX\n31\nK..."
+        },
+        {
+          "rank": 26,
+          "similarity": 0.8144785987444674,
+          "base_similarity": 0.7344785987444674,
+          "page": 27,
+          "type": "page_text",
+          "preview": "Root Cause: There is a bold statement at the top of the BDS on page 20, but no calculation or statement to confirm that a 1hr period has\nnot lapsed. C..."
+        },
+        {
+          "rank": 33,
+          "similarity": 0.8103104864295064,
+          "base_similarity": 0.7303104864295065,
+          "page": 30,
+          "type": "page_text",
+          "preview": "A review of deviations raised that have the same location, defect type and cause type has identified the following:\nProprietary Information. Do not di..."
+        },
+        {
+          "rank": 12,
+          "similarity": 0.8061823096719427,
+          "base_similarity": 0.7361823096719428,
+          "page": 11,
+          "type": "page_text",
+          "preview": "Spray Pattern testing is only\nperformed for the US market only. Table 5.2-1 lists the process capability assessments. Proprietary Information. Do not ..."
+        }
+      ]
+    },
+    {
+      "batch_number": 8,
+      "chunks_in_batch": 12,
+      "gpt_response": "**DIRECT ANSWER EXTRACTION**\n\nUpon reviewing the provided document excerpts, there is no explicit mention of the number of unsubstantiated complaints specifically for Israel. The document does not provide a direct numerical answer to the query regarding unsubstantiated complaints for this region.\n\n**REGULATORY CONTEXT ANALYSIS**\n\nIn the context of pharmaceutical regulatory requirements, unsubstantiated complaints refer to those that lack sufficient evidence to confirm a product defect or adverse event. Regulatory bodies, such as the FDA or EMA, require thorough documentation and investigation of all complaints, substantiated or not, to ensure product safety and compliance with Good Manufacturing Practices (GMP).\n\n**QUANTITATIVE DATA VALIDATION**\n\nThe document excerpts provided do not contain specific quantitative data related to unsubstantiated complaints for Israel. Therefore, cross-referencing or validation of such data is not possible with the current information.\n\n**COMPREHENSIVE INSIGHTS**\n\nThe absence of specific data on unsubstantiated complaints for Israel in the provided excerpts suggests a potential gap in the document's reporting or a need for further investigation into other sections of the document. It is crucial for pharmaceutical companies to maintain detailed records of all complaints, including those unsubstantiated, to identify any emerging safety signals or compliance issues.\n\n**EVIDENCE-BASED CONCLUSIONS**\n\n- **Key Findings**: The document does not provide specific information on unsubstantiated complaints for Israel.\n- **Data Limitations**: The excerpts lack detailed complaint data for specific regions, including Israel.\n- **Recommendations**: Further investigation into the complete document or additional sources may be necessary to obtain the required data. It is also advisable to ensure that all complaint data is thoroughly documented and analyzed for potential safety signals.\n- **Gaps**: The current information does not address the query directly, indicating a need for more comprehensive data access.\n\nIf further sections of the document or additional data sources are available, they should be reviewed to locate the specific information regarding unsubstantiated complaints for Israel.",
+      "chunk_details": [
+        {
+          "rank": 24,
+          "similarity": 0.804653060604229,
+          "base_similarity": 0.7346530606042291,
+          "page": 121,
+          "type": "page_text",
+          "preview": " Updated section 7.1 to include standardised wording for review of the vendor complaints, rejections and\nLaboratory Deviations reports for both Raw M..."
+        },
+        {
+          "rank": 8,
+          "similarity": 0.7980220537154346,
+          "base_similarity": 0.7380220537154346,
+          "page": 73,
+          "type": "page_text",
+          "preview": "Droplet Size Distribution Mean D\n50 µm\nFFNS ROW/US - DSD D\n50\nW6BW\n1\nX8AX\nereH\nstratS\ndoireP\nweiveR\nF8RX\n31\nK2AY H3YY\n52\nW7D2 E7Y2 F3E3\n73\nU6V3 D574\n9..."
+        },
+        {
+          "rank": 9,
+          "similarity": 0.7975884677201694,
+          "base_similarity": 0.7375884677201695,
+          "page": 72,
+          "type": "page_text",
+          "preview": "Droplet Size Distribution Mean D\n10 µm\nFFNS ROW/US - DSD D\n10\nW6BW\n1\nX8AX\nereH\nstratS\ndoireP\nweiveR\nF8RX\n31\nK2AY H3YY\n52\nW7D2 E7Y2 F3E3\n73\nU6V3 D574\n9..."
+        },
+        {
+          "rank": 1,
+          "similarity": 0.7959746266745797,
+          "base_similarity": 0.7959746266745797,
+          "page": 26,
+          "type": "page_text",
+          "preview": "CAPA CA 201425539 completed:\n- Update the Method Statement tracker with improved visibility and control of all method statements within the department..."
+        },
+        {
+          "rank": 6,
+          "similarity": 0.787034571295177,
+          "base_similarity": 0.7470345712951769,
+          "page": 28,
+          "type": "page_text",
+          "preview": "e\nThere were twelve deviations classified as minor related to product manufactured during the review period."
+        },
+        {
+          "rank": 10,
+          "similarity": 0.7805367390873656,
+          "base_similarity": 0.7405367390873656,
+          "page": 39,
+          "type": "page_text",
+          "preview": "GSK VQD-Q&AU-089671 v: 1.0 Retrieved: 27 Nov 2024 Effective: 29 Jul 2024\nBarnard Castle PPR 2024 Fluticasone Furoate Nasal Spray and FFNS Placebo\nThe ..."
+        },
+        {
+          "rank": 2,
+          "similarity": 0.7792917935200988,
+          "base_similarity": 0.7792917935200988,
+          "page": 45,
+          "type": "page_text",
+          "preview": "Do not disclose without consent. The current version from Veeva QualityDocs must be used. Page 45 of 123."
+        },
+        {
+          "rank": 4,
+          "similarity": 0.7781708316932777,
+          "base_similarity": 0.7781708316932777,
+          "page": 106,
+          "type": "page_text",
+          "preview": "Do not disclose without consent. The current version from Veeva QualityDocs must be used. Page 106 of 123."
+        },
+        {
+          "rank": 5,
+          "similarity": 0.7780145856298682,
+          "base_similarity": 0.7780145856298682,
+          "page": 52,
+          "type": "page_text",
+          "preview": "Do not disclose without consent. The current version from Veeva QualityDocs must be used. Page 52 of 123."
+        },
+        {
+          "rank": 6,
+          "similarity": 0.7779425136011426,
+          "base_similarity": 0.7779425136011426,
+          "page": 44,
+          "type": "page_text",
+          "preview": "Do not disclose without consent. The current version from Veeva QualityDocs must be used. Page 44 of 123."
+        },
+        {
+          "rank": 8,
+          "similarity": 0.77790139967337,
+          "base_similarity": 0.77790139967337,
+          "page": 46,
+          "type": "page_text",
+          "preview": "Proprietary Information. Do not disclose without consent. The current version from Veeva QualityDocs must be used. Page 46 of 123."
+        },
+        {
+          "rank": 17,
+          "similarity": 0.7778635358158926,
+          "base_similarity": 0.7378635358158926,
+          "page": 31,
+          "type": "page_text",
+          "preview": "e\nf\nMinor DE 201371206 and Minor DE 20142447f6 had the same defect location (Manufacturing), defect type (Foundations, Personnel and\nTraining) and cau..."
+        }
+      ]
+    }
+  ],
+  "total_chunks": 75,
+  "batches_processed": 8,
+  "pages_covered": [
+    5,
+    6,
+    8,
+    11,
+    12,
+    14,
+    26,
+    27,
+    28,
+    30,
+    31,
+    32,
+    33,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    52,
+    72,
+    73,
+    74,
+    75,
+    81,
+    85,
+    90,
+    92,
+    93,
+    97,
+    104,
+    106,
+    118,
+    119,
+    120,
+    121,
+    123
+  ],
+  "chunk_types": {
+    "page_text": 46,
+    "table": 29
+  },
+  "similarity_range": {
+    "min": 0.7778635358158926,
+    "max": 1.0,
+    "avg": 0.8821528719830326
+  },
+  "search_strategy": "multi-pass-enhanced",
+  "processing_time": "2025-07-09T16:27:06.222521",
+  "total_processing_time": 179.5152611732483,
+  "analysis_metadata": {
+    "system_version": "Enhanced Batched RAG v2.0",
+    "processing_time_seconds": 179.5152611732483,
+    "timestamp": "20250709_162933",
+    "settings": {
+      "top_k": 75,
+      "min_similarity": 0.2,
+      "delay_between_requests": 2.0
+    }
+  }
+}

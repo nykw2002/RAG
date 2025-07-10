@@ -1,0 +1,31 @@
+{
+  "question": "How many complaints are for Israel?",
+  "summary_file": "/Users/2409062/Desktop/RAG/doc_summary.json",
+  "original_file": "/Users/2409062/Desktop/RAG/test.txt",
+  "selected_sections": [
+    3,
+    4,
+    5
+  ],
+  "research_findings": [
+    {
+      "section_number": 3,
+      "analysis": "To determine how many complaints are for Israel, we need to examine the section for any references to complaints associated with Israel. The relevant information is found in the \"Unsubstantiated Complaints\" section, which lists complaints by market, batch number, material code, and complaint description.\n\nUpon reviewing the data, the following entries are related to Israel:\n\n1. **Unique Identifier: 000201357115**\n   - **Market:** Israel\n   - **Batch Number:** PT3Y\n   - **Material Code:** 10000000097173\n   - **Complaint Description:** Pump does not work\n\n2. **Unique Identifier: 000201362808**\n   - **Market:** Israel\n   - **Batch Number:** PT3Y\n   - **Material Code:** 10000000097173\n   - **Complaint Description:** Device will not spray\n\nFrom the analysis, there are **two complaints** associated with Israel. Both complaints are related to issues with the pump or spray function of the product.",
+      "selection_rank": 1
+    },
+    {
+      "section_number": 4,
+      "analysis": "To determine how many complaints are for Israel, I conducted a thorough analysis of the provided document section. Here are the findings:\n\n1. **Complaints for Israel:**\n   - **Unique Identifier: 000201368601**\n     - **Market:** Israel\n     - **Batch Number:** PT3Y\n     - **Material Code:** 10000000097173\n     - **Complaint Description:** Device will not spray\n   - **Unique Identifier: 000201390276**\n     - **Market:** Israel\n     - **Batch Number:** 9V2R\n     - **Material Code:** 10000000097173\n     - **Complaint Description:** Spray does not work\n   - **Unique Identifier: 000201396289**\n     - **Market:** Israel\n     - **Batch Number:** PT3Y\n     - **Material Code:** 10000000097173\n     - **Complaint Description:** Pump does not work\n   - **Unique Identifier: 000201399710**\n     - **Market:** Israel\n     - **Batch Number:** UC9T\n     - **Material Code:** 10000000097173\n     - **Complaint Description:** Pump does not work\n   - **Unique Identifier: 000201412764**\n     - **Market:** Israel\n     - **Batch Number:** PT3Y\n     - **Material Code:** 10000000097173\n     - **Complaint Description:** The substance does not come out.\n   - **Unique Identifier: QE-004535**\n     - **Market:** Israel\n     - **Batch Number:** 7R8M\n     - **Material Code:** 10000000097173\n     - **Complaint Description:** Avamys nasal spray 120 dose- BN 7R8M - The substance does not come out.\n   - **Unique Identifier: QE-006727**\n     - **Market:** Israel\n     - **Batch Number:** EN8T\n     - **Material Code:** 10000000097173\n     - **Complaint Description:** AVAMYS AQ NASAL SPRAY 120D - BN EN8T- The substance does not come out.\n\n**Total Complaints for Israel:** 7\n\nThese complaints are spread across different pages and tables within the document, and they consistently involve issues with the spray or pump not functioning as expected. Each entry includes a unique identifier, market (Israel), batch number, material code, and a description of the complaint, which provides a comprehensive view of the issues reported from Israel.",
+      "selection_rank": 2
+    },
+    {
+      "section_number": 5,
+      "analysis": "To determine how many complaints are for Israel, we need to identify entries in the document that specifically mention Israel as the market for the complaint. Upon reviewing the provided content, the following complaints are associated with Israel:\n\n1. **QE-006727**: This entry is listed under Israel with the complaint description \"The substance does not come out\" for the product \"AVAMYS AQ NASAL SPRAY 120D - BN EN8T.\"\n\n2. **QE-008974**: This entry is also listed under Israel with the complaint description \"Avamys nasal spray 120 dose- BN 7R8M - The product does not spray.\"\n\n3. **QE-009576**: This entry is listed under Israel with the complaint description \"Avamys nasal spray 120 dose- BN 9D6N - The substance does not come out.\"\n\n4. **QE-009755**: This entry is listed under Israel with the complaint description \"Avamys nasal spray 120 dose- BN 7R8M - The substance does not come out.\"\n\nIn total, there are **four complaints** associated with Israel in the document section provided. Each complaint is related to the Avamys nasal spray product, with issues primarily concerning the product not spraying or the substance not coming out.",
+      "selection_rank": 3
+    }
+  ],
+  "total_sections_analyzed": 3,
+  "processing_time": 41.98051595687866,
+  "timestamp": "2025-07-10T09:41:07.286390",
+  "method": "ai_driven_section_selection"
+}

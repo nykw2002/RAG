@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-RAG Embeddings Creator
+RAG Embeddings Creator - Updated to use OpenAI's text-embedding-ada-002
 Processes the extracted PDF JSON and creates vector embeddings for RAG system
 """
 
@@ -11,6 +11,8 @@ import numpy as np
 from datetime import datetime
 from typing import List, Dict, Any, Optional
 import re
+import requests
+import time
 
 # Vector storage options
 try:
@@ -20,22 +22,17 @@ except ImportError:
     CHROMA_AVAILABLE = False
 
 try:
-    from sentence_transformers import SentenceTransformer
-    SENTENCE_TRANSFORMERS_AVAILABLE = True
-except ImportError:
-    SENTENCE_TRANSFORMERS_AVAILABLE = False
-
-try:
-    import openai
-    OPENAI_AVAILABLE = True
-except ImportError:
-    OPENAI_AVAILABLE = False
-
-try:
     import faiss
     FAISS_AVAILABLE = True
 except ImportError:
     FAISS_AVAILABLE = False
+
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+    DOTENV_AVAILABLE = True
+except ImportError:
+    DOTENV_AVAILABLE = False
 
 class DocumentChunker:
     """Intelligently chunks document content for optimal RAG performance"""
@@ -164,40 +161,123 @@ class DocumentChunker:
         
         return ""
 
-class EmbeddingGenerator:
-    """Generate embeddings using various models"""
+class AzureOpenAIAuth:
+    """Handle Azure OpenAI authentication"""
     
-    def __init__(self, model_type: str = "sentence-transformers", model_name: str = None):
-        self.model_type = model_type
-        self.model = None
-        
-        if model_type == "sentence-transformers":
-            if not SENTENCE_TRANSFORMERS_AVAILABLE:
-                raise ImportError("sentence-transformers not available. Install with: pip install sentence-transformers")
-            model_name = model_name or "all-MiniLM-L6-v2"
-            print(f"Loading sentence transformer model: {model_name}")
-            self.model = SentenceTransformer(model_name)
-            
-        elif model_type == "openai":
-            if not OPENAI_AVAILABLE:
-                raise ImportError("openai not available. Install with: pip install openai")
-            self.model_name = model_name or "text-embedding-ada-002"
-            # OpenAI client will be initialized when needed
-            
-        else:
-            raise ValueError(f"Unsupported model type: {model_type}")
+    def __init__(self):
+        self.ping_fed_url = os.getenv('PING_FED_URL')
+        self.kgw_client_id = os.getenv('KGW_CLIENT_ID')
+        self.kgw_client_secret = os.getenv('KGW_CLIENT_SECRET')
+        self.access_token = None
+        self.token_expires_at = None
     
-    def generate_embeddings(self, texts: List[str]) -> np.ndarray:
-        """Generate embeddings for a list of texts"""
-        if self.model_type == "sentence-transformers":
-            return self.model.encode(texts, convert_to_numpy=True)
-            
-        elif self.model_type == "openai":
-            # This would require OpenAI API key
-            raise NotImplementedError("OpenAI embeddings require API key configuration")
+    def get_access_token(self) -> str:
+        """Get or refresh access token"""
+        if self.access_token and self.token_expires_at and time.time() < self.token_expires_at:
+            return self.access_token
         
+        # Request new token
+        headers = {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        }
+        
+        data = {
+            'grant_type': 'client_credentials',
+            'client_id': self.kgw_client_id,
+            'client_secret': self.kgw_client_secret
+            # Removed the scope parameter that was causing the error
+        }
+        
+        response = requests.post(self.ping_fed_url, headers=headers, data=data)
+        
+        if response.status_code == 200:
+            token_data = response.json()
+            self.access_token = token_data['access_token']
+            # Set expiration time (subtract 5 minutes for buffer)
+            self.token_expires_at = time.time() + token_data.get('expires_in', 3600) - 300
+            return self.access_token
         else:
-            raise ValueError(f"Unsupported model type: {self.model_type}")
+            raise Exception(f"Failed to get access token: {response.status_code} - {response.text}")
+
+class OpenAIEmbeddingGenerator:
+    """Generate embeddings using OpenAI's text-embedding-ada-002"""
+    
+    def __init__(self):
+        self.endpoint = os.getenv('KGW_ENDPOINT')
+        self.api_version = os.getenv('AOAI_API_VERSION')
+        self.deployment_name = os.getenv('EMBEDDING_MODEL_DEPLOYMENT_NAME')
+        self.auth = AzureOpenAIAuth()
+        
+        if not all([self.endpoint, self.api_version, self.deployment_name]):
+            raise ValueError("Missing required Azure OpenAI configuration")
+        
+        print(f"✅ OpenAI Embedding Generator initialized")
+        print(f"   - Endpoint: {self.endpoint}")
+        print(f"   - Deployment: {self.deployment_name}")
+        print(f"   - API Version: {self.api_version}")
+    
+    def generate_embeddings(self, texts: List[str], batch_size: int = 50) -> np.ndarray:
+        """Generate embeddings for a list of texts in batches"""
+        all_embeddings = []
+        
+        # Reduce batch size to avoid rate limits
+        print(f"🔄 Generating embeddings for {len(texts)} texts in batches of {batch_size}")
+        
+        for i in range(0, len(texts), batch_size):
+            batch = texts[i:i + batch_size]
+            print(f"   Processing batch {i//batch_size + 1}/{(len(texts) - 1)//batch_size + 1}")
+            
+            batch_embeddings = self._generate_batch_embeddings(batch)
+            all_embeddings.extend(batch_embeddings)
+            
+            # More conservative rate limiting - wait longer between batches
+            if i + batch_size < len(texts):
+                print(f"   Waiting 3 seconds before next batch...")
+                time.sleep(3)
+        
+        return np.array(all_embeddings)
+    
+    def _generate_batch_embeddings(self, texts: List[str]) -> List[List[float]]:
+        """Generate embeddings for a batch of texts"""
+        access_token = self.auth.get_access_token()
+        
+        url = f"{self.endpoint}/openai/deployments/{self.deployment_name}/embeddings?api-version={self.api_version}"
+        
+        headers = {
+            'Content-Type': 'application/json',
+            'Authorization': f'Bearer {access_token}'
+        }
+        
+        payload = {
+            'input': texts,
+            'model': self.deployment_name
+        }
+        
+        max_retries = 5  # Increased retries
+        for attempt in range(max_retries):
+            try:
+                response = requests.post(url, headers=headers, json=payload, timeout=60)
+                
+                if response.status_code == 200:
+                    result = response.json()
+                    return [item['embedding'] for item in result['data']]
+                elif response.status_code == 429:
+                    # Rate limit hit, wait progressively longer
+                    wait_time = (2 ** attempt) + 5  # Add base 5 seconds
+                    print(f"   Rate limit hit, waiting {wait_time} seconds...")
+                    time.sleep(wait_time)
+                    continue
+                else:
+                    raise Exception(f"API request failed: {response.status_code} - {response.text}")
+            
+            except requests.exceptions.RequestException as e:
+                if attempt == max_retries - 1:
+                    raise Exception(f"Request failed after {max_retries} attempts: {e}")
+                wait_time = (2 ** attempt) + 2
+                print(f"   Request error, retrying in {wait_time} seconds...")
+                time.sleep(wait_time)
+        
+        raise Exception(f"Failed to generate embeddings after {max_retries} attempts")
 
 class VectorStore:
     """Store and manage vector embeddings"""
@@ -227,10 +307,29 @@ class VectorStore:
             
         elif self.store_type == "chroma" and CHROMA_AVAILABLE:
             ids = [f"doc_{i}_{len(self.texts) + i}" for i in range(len(texts))]
+            
+            # Clean metadata for ChromaDB - flatten nested dictionaries
+            cleaned_metadata = []
+            for meta in metadata:
+                clean_meta = {}
+                for key, value in meta.items():
+                    if isinstance(value, dict):
+                        # Flatten nested dictionaries
+                        for nested_key, nested_value in value.items():
+                            if isinstance(nested_value, (str, int, float, bool, type(None))):
+                                clean_meta[f"{key}_{nested_key}"] = nested_value
+                            else:
+                                clean_meta[f"{key}_{nested_key}"] = str(nested_value)
+                    elif isinstance(value, (str, int, float, bool, type(None))):
+                        clean_meta[key] = value
+                    else:
+                        clean_meta[key] = str(value)
+                cleaned_metadata.append(clean_meta)
+            
             self.collection.add(
                 documents=texts,
                 embeddings=embeddings.tolist(),
-                metadatas=metadata,
+                metadatas=cleaned_metadata,
                 ids=ids
             )
             
@@ -251,7 +350,9 @@ class VectorStore:
                 'metadata': self.metadata,
                 'texts': self.texts,
                 'created_at': datetime.now().isoformat(),
-                'collection_name': self.collection_name
+                'collection_name': self.collection_name,
+                'embedding_model': 'text-embedding-ada-002',
+                'embedding_dimensions': 1536
             }
             
             with open(filepath, 'wb') as f:
@@ -268,7 +369,9 @@ class VectorStore:
                 pickle.dump({
                     'metadata': self.metadata,
                     'texts': self.texts,
-                    'created_at': datetime.now().isoformat()
+                    'created_at': datetime.now().isoformat(),
+                    'embedding_model': 'text-embedding-ada-002',
+                    'embedding_dimensions': 1536
                 }, f)
             
             print(f"FAISS index saved to: {filepath}.faiss")
@@ -285,7 +388,7 @@ def main():
     # Create output directory
     os.makedirs(output_dir, exist_ok=True)
     
-    print("RAG Embeddings Creator")
+    print("RAG Embeddings Creator - OpenAI Ada-002")
     print("=" * 50)
     
     # Check if JSON file exists
@@ -299,18 +402,21 @@ def main():
         json_data = json.load(f)
     
     # Initialize chunker
-    print("Initializing document chunker...")
-    chunker = DocumentChunker(chunk_size=512, chunk_overlap=50)
+    chunk_size = int(os.getenv('MAX_CHUNK_SIZE', 512))
+    chunk_overlap = int(os.getenv('CHUNK_OVERLAP', 50))
+    
+    print(f"Initializing document chunker (size: {chunk_size}, overlap: {chunk_overlap})...")
+    chunker = DocumentChunker(chunk_size=chunk_size, chunk_overlap=chunk_overlap)
     
     # Process and chunk the data
     print("Processing and chunking document content...")
     chunks = chunker.process_json_data(json_data)
     print(f"Created {len(chunks)} chunks from the document")
     
-    # Generate embeddings
-    if SENTENCE_TRANSFORMERS_AVAILABLE:
-        print("Generating embeddings using sentence-transformers...")
-        embedding_generator = EmbeddingGenerator("sentence-transformers", "all-MiniLM-L6-v2")
+    # Generate embeddings using OpenAI
+    try:
+        print("Generating embeddings using OpenAI text-embedding-ada-002...")
+        embedding_generator = OpenAIEmbeddingGenerator()
         
         # Extract texts for embedding
         texts = [chunk['text'] for chunk in chunks]
@@ -351,6 +457,7 @@ def main():
             'chunk_types': {},
             'pages_processed': len(json_data.get('pages', [])),
             'embedding_dimensions': embeddings.shape[1] if embeddings is not None else 0,
+            'embedding_model': 'text-embedding-ada-002',
             'created_at': datetime.now().isoformat()
         }
         
@@ -367,6 +474,7 @@ def main():
         # Print summary
         print("\nProcessing Summary:")
         print(f"  - Total chunks created: {len(chunks)}")
+        print(f"  - Embedding model: text-embedding-ada-002")
         print(f"  - Embedding dimensions: {embeddings.shape[1]}")
         print(f"  - Total characters: {analysis['total_characters']:,}")
         print(f"  - Total words: {analysis['total_words']:,}")
@@ -379,9 +487,9 @@ def main():
         print(f"\nVector stores created in: {output_dir}")
         print("RAG preparation completed successfully!")
         
-    else:
-        print("Error: sentence-transformers not available.")
-        print("Install it with: pip install sentence-transformers")
+    except Exception as e:
+        print(f"Error generating embeddings: {e}")
+        print("Please check your Azure OpenAI configuration and network connectivity")
 
 if __name__ == "__main__":
     main()

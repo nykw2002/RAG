@@ -42,6 +42,15 @@ Thumbs.db
 chroma_db/
 vector_store/
 
-# Large files
+# Large input files
 *.pdf
-*.json
+test.txt
+test.xml
+
+# Generated output files (optional - comment out if you want to track these)
+# doc_summary.json
+# deep_research.json
+# final_answer.json
+# test_extracted.json
+# *_analysis_*.json
+# ai_research_*.json
